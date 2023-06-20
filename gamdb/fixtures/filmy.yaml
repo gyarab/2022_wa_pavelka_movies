@@ -1,0 +1,45 @@
+- model: films.movie
+  pk: 1
+  fields:
+    name: 'Top Gun: Maverick'
+    slug: _
+    image_url: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBcUFRUYGBcaGxcXGxsbGhcYGxsXGhcbGhgbFxobISwkHB0pIBcXJjYlKS4wMzMzGiI5PjkyPSwyMzABCwsLEA4QHhISHjIpJCkyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAQsAvQMBIgACEQEDEQH/
+    year: 2022
+    avg_rating: 0.0
+    description: prostì film s tomem cruisem = bomba
+    director: 1
+    genres:
+    - 1
+    - 2
+    actors:
+    - 1
+- model: films.comment
+  pk: 1
+  fields:
+    movie: 1
+    author: Píta
+    text: mega cooooooooooooool
+    rating: 97
+    created_at: 2023-06-20 18:15:36.414425+00:00
+- model: films.director
+  pk: 1
+  fields:
+    name: Joseph Kosinski
+    slug: _
+    birth_year: 1974
+- model: films.actor
+  pk: 1
+  fields:
+    name: Tom Cruise
+    birth_year: 1962
+    slug: _
+    photo_url: https://image.pmgstatic.com/files/images/creator/photos/166/432/166432435_af1fc8.jpg?w100h132crop
+    description: Americký frajer.
+- model: films.genre
+  pk: 1
+  fields:
+    name: Akèní
+- model: films.genre
+  pk: 2
+  fields:
+    name: Drama
